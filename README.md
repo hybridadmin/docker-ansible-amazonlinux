@@ -4,8 +4,7 @@
 
 ## Supported tags and respective `Dockerfile` links
 
-- [`latest`, `2` (*2/Dockerfile*)](https://github.com/hybridadmin/docker-amazonlinux-ansible/tree/main/2/Dockerfile)
-- [(`latest`, `2`)](https://github.com/hybridadmin/docker-amazonlinux-ansible/tree/main/2/Dockerfile)
+- [`latest`, `2`](https://github.com/hybridadmin/docker-amazonlinux-ansible/tree/main/2/Dockerfile)
 
 ## How to Build the image
 
