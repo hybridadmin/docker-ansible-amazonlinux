@@ -2,6 +2,10 @@
 
 > AmazonLinux Docker images to be used for testing ansible playbooks and roles.
 
+* Where to file issues:[](https://github.com/hybridadmin/docker-amazonlinux-ansible/issues)
+* Supported architectures:[](https://github.com/docker-library/official-images#architectures-other-than-amd64) `amd64`
+
+
 ## Supported tags and respective `Dockerfile` links
 
 - [`latest`, `2`](https://github.com/hybridadmin/docker-amazonlinux-ansible/tree/main/2/Dockerfile)
