@@ -41,6 +41,7 @@ docker exec --tty [container_id] env TERM=xterm ansible --version
 docker exec --tty [container_id] env TERM=xterm ansible-playbook /path/to/ansible/playbook.yml --syntax-check
 ```
 
-## Author
-
-Created by Hybridadmin
+Connect to the container:
+```console
+docker exec -it [container_id] /bin/bash
+```
