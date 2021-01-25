@@ -6,33 +6,33 @@
 
 * Maintained by: [hybridadmin](https://github.com/hybridadmin)
 * Where to get help: [The Docker Community Forums](https://forums.docker.com/), [Docker Community on Slack](https://dockr.ly/slack) or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
-* Where to file issues: [(issue tracker)](https://github.com/hybridadmin/docker-amazonlinux-ansible/issues) include the `docker` tag
+* Where to file issues: [(issue tracker)](https://github.com/hybridadmin/docker-ansible-amazonlinux/issues) include the `docker` tag
 * Supported architectures: [(more info)](https://github.com/docker-library/official-images#architectures-other-than-amd64) `amd64`
 
 
 ## Supported tags and respective `Dockerfile` links
 
-- [`latest`, `2`](https://github.com/hybridadmin/docker-amazonlinux-ansible/tree/main/2/Dockerfile)
+- [`latest`, `2`](https://github.com/hybridadmin/docker-ansible-amazonlinux/tree/main/2/Dockerfile)
 
 ## How to Build the image
 
 1. Install docker
    * [Linux](https://docs.docker.com/engine/install/)
    * [Windows](https://docs.docker.com/docker-for-windows/install/)
-2. Clone the repo `git clone https://github.com/hybridadmin/docker-amazonlinux-ansible.git`
+2. Clone the repo `git clone https://github.com/hybridadmin/docker-ansible-amazonlinux.git`
 3. `cd` into the directory
-4. Run `docker build -t amazonlinux-ansible .`
+4. Run `docker build -t ansible-amazonlinux .`
 
 ## How to use this image
 
 Pull the image using the following command:
 ```console
-docker pull hybridadmin/amazonlinux-ansible:latest
+docker pull hybridadmin/ansible-amazonlinux:latest
 ```
 
 Run a container using the image with the following command:
 ```console
-docker run -d --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:ro hybridadmin/amazonlinux-ansible:latest
+docker run -d --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:ro hybridadmin/ansible-amazonlinux:latest
 ```
 
 Use Ansible inside the container:
