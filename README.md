@@ -1,4 +1,5 @@
 # AmazonLinux Docker Images with ansible and systemd
+![Build](https://github.com/hybridadmin/docker-ansible-amazonlinux/workflows/Build/badge.svg?branch=main)
 
 > AmazonLinux Docker images to be used for testing ansible playbooks and roles.
 
