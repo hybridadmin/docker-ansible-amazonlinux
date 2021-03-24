@@ -3,7 +3,7 @@ LABEL maintainer="Tinashe Chikomo <tinashe@chikomo.net>"
 
 ENV container docker
 
-ENV pip_packages "ansible"
+ENV pip_packages "ansible pymysql"
 
 RUN yum -y update; yum clean all
 
@@ -28,7 +28,8 @@ RUN sed -i -e 's/^\(Defaults\s*requiretty\)/#--- \1/'  /etc/sudoers
 
 # Install Ansible inventory file.
 RUN mkdir -p /etc/ansible
-RUN echo -e '[local]\nlocalhost ansible_connection=local' > /etc/ansible/hosts
+ADD https://raw.githubusercontent.com/hybridadmin/misc-scripts/master/linux/ansible/hosts /etc/ansible/hosts
+ADD https://raw.githubusercontent.com/hybridadmin/misc-scripts/master/linux/ansible/ansible.cfg etc/ansible/ansible.cfg
 
 RUN cd /lib/systemd/system/sysinit.target.wants/; \
     for i in *; do [ $i = systemd-tmpfiles-setup.service ] || rm -f $i; done
