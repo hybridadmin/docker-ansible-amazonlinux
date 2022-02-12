@@ -3,7 +3,7 @@ LABEL maintainer="Tinashe Chikomo <tinashe@chikomo.net>"
 
 ENV container docker
 
-ENV pip_packages "ansible pymysql"
+ENV pip_packages "ansible pymysql yamllint ansible-lint"
 
 RUN yum -y update; yum clean all
 
