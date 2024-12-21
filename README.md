@@ -1,6 +1,6 @@
 # AmazonLinux Docker Images with ansible and systemd
 
-![Build](https://github.com/hybridadmin/docker-ansible-amazonlinux/workflows/Build/badge.svg?branch=main) ![Docker Pulls](https://img.shields.io/docker/pulls/hybridadmin/ansible-amazonlinux)
+![Build](https://img.shields.io/github/actions/workflow/status/hybridadmin/docker-ansible-amazonlinux/build.yml) ![Docker Pulls](https://img.shields.io/docker/pulls/hybridadmin/ansible-amazonlinux)
 
 > AmazonLinux Docker images to be used for testing ansible playbooks and roles.
 
@@ -13,7 +13,8 @@
 
 ## Supported tags and respective `Dockerfile` links
 
-- [`latest`, `2`](https://github.com/hybridadmin/docker-ansible-amazonlinux/tree/main/2/Dockerfile)
+- [`latest`, `2023`](https://github.com/hybridadmin/docker-ansible-amazonlinux/tree/main/2023/Dockerfile)
+- [`2`](https://github.com/hybridadmin/docker-ansible-amazonlinux/tree/main/2/Dockerfile)
 
 ## How to Build the image
 
@@ -35,7 +36,7 @@ docker pull hybridadmin/ansible-amazonlinux:latest
 Run a container using the image with the following command:
 
 ```console
-docker run -d --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:ro hybridadmin/ansible-amazonlinux:latest
+docker run -d --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:rw --cgroupns=host hybridadmin/ansible-amazonlinux:latest
 ```
 
 Use ansible inside the container:
